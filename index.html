@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnología en Codo a Codo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         .error {
             border: 2px solid red;
@@ -15,45 +19,58 @@
 <body>
     <header>
         <nav style="border: 2px solid blue; margin-bottom: 10px;">
+
+            <div class="logo">
             <img src="./imagenes/logos/Logos_BA_Agencia.jpg" alt="logo BsAs" />
-            <ul>
-                <l><a href="#inicio"><span><img
-                                style="width: 5opx; height: 50px;"
-                                src="./imagenes/iconos/home-outline.svg"
-                                alt="link home"></span>Inicio </a></l>
-                <li><a href="#tecnologias"><span><img
-                                style="width: 5opx; height: 50px;"
-                                src="./imagenes/iconos/tecnologias.svg"
-                                alt="link tecnologias-carrusel"></span>Tecnologías</a>
-                </li>
-                <li><a href="#temario"><span><img
-                                style="width: 5opx; height: 50px;"
-                                src="./imagenes/iconos/temario.svg"
-                                alt="link temario"></span>Temario </a></li>
-                <li><a href="#faq"><span><img style="width: 5opx; height: 50px;"
-                                src="./imagenes/iconos/faq_icon.svg"
-                                alt="link faq"></span>Preguntas Frecuentes</a>
-                </li>
-                <li><a href="#formularioContacto"><span><img
-                                style="width: 5opx; height: 50px;"
-                                src="./imagenes/iconos/formulario.svg"
-                                alt="link formulario"></span>Formulario
-                        Contacto</a></li>
-                <li><a href="#aboutUs"><span><img
-                                style="width: 5opx; height: 50px;"
-                                src="./imagenes/iconos/contacto.svg"
-                                alt="link contacto"></span>Sobre Nosotros</a>
-                </li>
-            </ul>
+            </div>
+
+            <div class="navegacion">
+                <ul>
+                    <li><a href="#inicio"><span><img
+                                    style="width: 5opx; height: 50px;"
+                                    src="./imagenes/iconos/home-outline.svg"
+                                    alt="link home"></span>Inicio </a></li>
+                    <li><a href="#tecnologias"><span><img
+                                    style="width: 5opx; height: 50px;"
+                                    src="./imagenes/iconos/tecnologias.svg"
+                                    alt="link tecnologias-carrusel"></span>Tecnologías</a>
+                    </li>
+                    <li><a href="#temario"><span><img
+                                    style="width: 5opx; height: 50px;"
+                                    src="./imagenes/iconos/temario.svg"
+                                    alt="link temario"></span>Temario </a></li>
+                    <li><a href="#faq"><span><img style="width: 5opx; height: 50px;"
+                                    src="./imagenes/iconos/faq_icon.svg"
+                                    alt="link faq"></span>Preguntas Frecuentes</a>
+                    </li>
+                    <li><a href="#formularioContacto"><span><img
+                                    style="width: 5opx; height: 50px;"
+                                    src="./imagenes/iconos/formulario.svg"
+                                    alt="link formulario"></span>Formulario
+                            Contacto</a></li>
+                    <li><a href="#aboutUs"><span><img
+                                    style="width: 5opx; height: 50px;"
+                                    src="./imagenes/iconos/contacto.svg"
+                                    alt="link contacto"></span>Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
+
         <!-- Imagen y descripcion ppal -->
-        <section style="border: 2px solid blue; margin-bottom: 10px;"
-            class="hero-image">
-            <div>
-                <img src="./imagenes/hero2.png" alt="hero-image">
+        <section style="border: 2px solid blue; margin-bottom: 10px;" class="hero-image">
+            
+
+                <div class="imagen-hero">
+
+                <img src="./imagenes/hero2actualizada.png" alt="hero-image">
+
+                </div>
+
                 <div class="hero-card">
+
                     <h2>Desarrollo Full Stack Node JS</h2>
                     <p>Este curso brinda una visión integral del desarrollo web,
                         dividido en dos módulos:
@@ -67,60 +84,72 @@
 
                     </p>
                 </div>
-            </div>
+
+            
         </section>
         <!-- Tecnologías del curso -->
-        <section style="border: 2px solid blue; margin-bottom: 10px;"
-            class="tecnologias-container">
+        <section style="border: 2px solid blue; margin-bottom: 10px;"class="tecnologias-container">
             <!-- Carrusel de imagenes de las Tecnologías del curso -->
-            <section style="border: 2px solid red; margin: 10px;"
-                class="tecnologias-carrusel">
+            
+
                 <ul class="tecnologias-items">
+
                     <li class="tecnologia-item">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/html5.svg"
                             alt="tecnologia HTML">
                     </li>
+
                     <li class="tecnologia-item">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/CSS3.svg"
                             alt="tecnologia CSS">
                     </li>
+
                     <li class="tecnologia-item">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/javascript.svg"
                             alt="tecnologia javascript">
                     </li>
+
                     <li class="tecnologia-item">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/nodejs.svg"
                             alt="tecnologia nodejs">
                     </li>
+
                     <li class="tecnologia-item">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/visual.svg"
                             alt="tecnologia visual code">
                     </li>
+
                     <li class="tecnologia-item">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/github.svg"
                             alt="tecnologia github">
                     </li>
+
                     <li class="tecnologia-item">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/mysql.svg"
                             alt="tecnologia mysql">
                     </li>
+
                 </ul>
-            </section>
+
+            
+
         </section>
 
         <!-- Cards con Temario del curso -->
-        <section style="border: 2px solid blue; margin-bottom: 10px;"
-            class="temario">
+        <section style="border: 2px solid blue; margin-bottom: 10px;" class="temario">
+
+            <h2>Tecnologias a aprender durante la cursada</h2>
+
             <ul class="temario-cards">
-                <li style="border: 2px solid green; margin-bottom: 10px;"
-                    class="temario-item">
+
+                <li style="border: 2px solid green; margin-bottom: 10px;" class="temario-item">
                     <div>
                         <h2>Herramientas de Diseño</h2>
                         <img style="width: 5opx; height: 50px;"
@@ -132,17 +161,22 @@
                         y prototipos de tus sitios web antes de pasar al código
                     </p>
                 </li>
-                <li style="border: 2px solid green; margin-bottom: 10px;"
-                    class="temario-item">
+                <li style="border: 2px solid green; margin-bottom: 10px;" class="temario-item">
+
                     <div>
+
                         <h2>HTML y CSS</h2>
+
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/html5.svg"
                             alt="temario html Css">
+
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/CSS3.svg"
                             alt="temario html Css">
+
                     </div>
+
                     <p>Aprenderás a crear estructuras en HTML y trabajar con
                         conceptos como
                         semántica y accesibilidad. Además le darás estilos a tus
@@ -150,6 +184,7 @@
                         propiedades que ofrece CSS.
 
                     </p>
+
                 </li>
                 <li style="border: 2px solid green; margin-bottom: 10px;"
                     class="temario-item">
@@ -194,6 +229,7 @@
                     </p>
                 </li>
             </ul>
+
         </section>
         <!-- Preguntas frecuentes -->
         <section style="border: 2px solid blue; margin-bottom: 10px;"
