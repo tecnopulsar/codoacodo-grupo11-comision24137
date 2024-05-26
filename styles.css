@@ -1,135 +1,144 @@
-*{
-    font-family: "Montserrat", sans-serif;
+* {
+  font-family: "Montserrat", sans-serif;
 }
-body{
-    margin: 0;
-    background-color: #F0EBE3;
+body {
+  margin: 0;
+  background-color: #f0ebe3;
 }
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #f4ce14;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f4ce14;
+  color: white;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .navegacion ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
 .navegacion li {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navegacion a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
 }
 
 .navegacion span {
-    display: flex;
-    align-items: center;
-    margin-right: 8px;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
 }
 
 .navegacion img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
-.logo img{
-    width: 200px;
-    height: 80px;
+.logo img {
+  width: 200px;
+  height: 80px;
+}
+.hero-image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  height: 700px;
+}
+.imagen-hero {
+  border: 2px solid black;
+  width: 60%;
+}
+.imagen-hero img {
+  width: 100%;
+  height: 100%;
+}
+.hero-card {
+  border: 2px solid gray;
+  width: 30%;
+  padding: 0px 20px;
+}
+.hero-card h2 {
+  font-size: 40px;
+}
+.hero-card p {
+  font-size: 20px;
+}
 
+/* carousel de tecnologias */
+.tecnologias-container {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
 }
-.hero-image{
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-around;
-height: 700px;
+.tecnologias-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  list-style: none;
+  animation: slide 5s linear infinite;
 }
-    .imagen-hero{
-        border: 2px solid black;
-        width: 60%;
-        
-    }
-        .imagen-hero img{
-            width: 100%;
-            height: 100%;
-        }
-    .hero-card{
-        border: 2px solid gray;
-        width: 30%;
-        padding: 0px 20px;
-    }
-        .hero-card h2{
-            font-size: 40px;
-        }
-        .hero-card p{
-            font-size: 20px;
+.tecnologias-items img{
+   
+  width: 200px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
-        }
-
-.tecnologias-container{
-height: 100px;
+.temario h2 {
+  text-align: center;
+  font-size: 40px;
 }
-    .tecnologias-items{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        list-style: none;
-       
-        
-    }
-    
-.temario h2{
-    text-align: center;
-    font-size: 40px;
+.temario-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: space-around;
+  padding: 20px;
+  list-style: none;
 }
-.temario-cards{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    justify-content: space-around;
-    padding: 20px;
-    list-style: none;
-
+.temario-item {
+  background-color: #ccc;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #333;
+  font-size: 20px;
 }
-    .temario-item{
-        background-color: #ccc;
-        padding: 20px;
-        text-align: center;
-        border: 1px solid #333;
-        font-size: 20px;
-    }
-.preguntas-frecuentes{
-    display: flex;
-    flex-direction: column;
-    height: 700px;
-
-}   
-    .texto-faq{
-        border: 1px solid black;
-    }
-    .preguntas-cards{
-        border: 1px solid red;
-        display: grid;
-        grid-template-columns: repeat(3,auto);
-        height: 600px;
-        grid-gap: 20px;
-        list-style: none;
-    }
+.preguntas-frecuentes {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+.texto-faq {
+  border: 1px solid black;
+}
+.preguntas-cards {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  height: 600px;
+  grid-gap: 20px;
+  list-style: none;
+}
