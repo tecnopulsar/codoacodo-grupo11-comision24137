@@ -116,4 +116,20 @@ height: 100px;
         border: 1px solid #333;
         font-size: 20px;
     }
-   
+.preguntas-frecuentes{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+
+}   
+    .texto-faq{
+        border: 1px solid black;
+    }
+    .preguntas-cards{
+        border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        height: 600px;
+        grid-gap: 20px;
+        list-style: none;
+    }
