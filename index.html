@@ -6,8 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnología en Codo a Codo</title>
     <style>
+        /* Estilos validacion formulario por javascript. falta corregir */
         .error {
             border: 2px solid red;
+        }
+
+        /* Estilos y animaciones para el logo */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 300px;
+            transition: transform 0.6s ease-in-out;
+            transform-style: preserve-3d;
+        }
+
+        .logo:hover {
+            transform: rotateY(180deg);
         }
     </style>
 </head>
@@ -15,7 +32,10 @@
 <body>
     <header>
         <nav style="border: 2px solid blue; margin-bottom: 10px;">
-            <img src="./imagenes/logos/Logos_BA_Agencia.jpg" alt="logo BsAs" />
+            <div class="logo-container">
+                <img src="./imagenes/logos/Logos_BA_Agencia.jpg" alt="logo BsAs"
+                    class="logo" />
+            </div>
             <ul>
                 <l><a href="#inicio"><span><img
                                 style="width: 5opx; height: 50px;"
