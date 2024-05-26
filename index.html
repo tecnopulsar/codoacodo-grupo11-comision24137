@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnología en Codo a Codo</title>
+    <style>
+        .error {
+            border: 2px solid red;
+        }
+    </style>
 </head>
 
 <body>
@@ -301,16 +306,49 @@
         <!-- Formulario de contacto y comentarios -->
         <section style="border: 2px solid blue; margin-bottom: 10px;"
             class="formulario-contacto">
-            <form action="#">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" />
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" />
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje" cols="30"
-                    rows="10"></textarea>
-                <input type="submit" value="Enviar" />
+            <img src="./imagenes/iconos/formulario.svg"
+                alt="formulario contacto">
+            <h2>formulario-contacto</h2>
+            <p>Si tienes alguna pregunta, no dudes en contactarnos utilizando el
+                formulario a continuación:</p>
+            <form id="formulario-contacto">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="curso">Curso de interés:</label>
+                <select id="curso" name="curso" required>
+                    <option value="">Selecciona un curso</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="fullstack">Full Stack</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5"
+                    required></textarea>
+
+                <label style="border: 2px solid red;">
+                    <input type="checkbox" id="suscripcion" name="suscripcion">
+                    Quiero recibir información sobre futuros cursos y
+                    promociones.
+                </label>
+
+                <label>Preferencia de contacto:</label>
+                <label><input type="radio" name="preferencia" value="email"
+                        required> Email</label>
+                <label><input type="radio" name="preferencia" value="telefono">
+                    Teléfono</label>
+
+                <input type="submit" value="Enviar">
             </form>
+        </section>
         </section>
     </main>
     <!-- Contacto y redes-->
