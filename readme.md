@@ -10,3 +10,7 @@ git push -u origin main
 
 -----------
 
+Maquetacion
+![image](https://github.com/tecnopulsar/codoacodo-grupo11-comision24137/assets/59393765/e345bf51-cc4a-4b3f-83cf-1c0c8fad8d6d)
+
+
