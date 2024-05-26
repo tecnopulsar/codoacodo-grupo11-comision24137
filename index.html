@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagenes/iconos/favicon-32x32.png"
+        type="image/png">
     <title>Tecnología en Codo a Codo</title>
     <style>
         /* Estilos y animaciones para el la hero-image */
@@ -67,16 +69,17 @@
 
 <body>
     <header>
+
         <nav style="border: 2px solid blue; margin-bottom: 10px;">
             <div class="logo-container">
                 <img src="./imagenes/logos/Logos_BA_Agencia.jpg" alt="logo BsAs"
                     class="logo" />
             </div>
             <ul>
-                <l><a href="#inicio"><span><img
+                <li><a href="#inicio"><span><img
                                 style="width: 5opx; height: 50px;"
                                 src="./imagenes/iconos/home-outline.svg"
-                                alt="link home"></span>Inicio </a></l>
+                                alt="link home"></span>Inicio </a></li>
                 <li><a href="#tecnologias"><span><img
                                 style="width: 5opx; height: 50px;"
                                 src="./imagenes/iconos/tecnologias.svg"
@@ -106,7 +109,7 @@
     <main>
         <!-- Imagen y descripcion ppal -->
         <section style="border: 2px solid blue; margin-bottom: 10px;"
-            class="hero-image">
+            class="hero-image" id="inicio">
             <div>
                 <img src="./imagenes/hero2.png" alt="hero-image">
                 <div class="hero-card">
@@ -127,7 +130,7 @@
         </section>
         <!-- Tecnologías del curso -->
         <section style="border: 2px solid blue; margin-bottom: 10px;"
-            class="tecnologias-container">
+            class="tecnologias-container" id="tecnologias">
             <!-- Carrusel de imagenes de las Tecnologías del curso -->
             <section style="border: 2px solid red; margin: 10px;"
                 class="tecnologias-carrusel">
@@ -173,7 +176,7 @@
 
         <!-- Cards con Temario del curso -->
         <section style="border: 2px solid blue; margin-bottom: 10px;"
-            class="temario">
+            class="temario" id="temario">
             <ul class="temario-cards">
                 <li style="border: 2px solid green; margin-bottom: 10px;"
                     class="temario-item">
@@ -253,7 +256,7 @@
         </section>
         <!-- Preguntas frecuentes -->
         <section style="border: 2px solid blue; margin-bottom: 10px;"
-            class="preguntas-frecuentes">
+            class="preguntas-frecuentes" id="faq">
             <h2 class="preguntas-frecuentes-titulo">FAQ</h2>
             <p class="preguntas-frecuentes-descripcion">Recopilación de
                 preguntas frecuentes sobre el curso</p>
@@ -361,7 +364,7 @@
         </section>
         <!-- Formulario de contacto y comentarios -->
         <section style="border: 2px solid blue; margin-bottom: 10px;"
-            class="formulario-contacto">
+            class="formulario-contacto" id="formularioContacto">
             <img src="./imagenes/iconos/formulario.svg"
                 alt="formulario contacto">
             <h2>formulario-contacto</h2>
@@ -405,11 +408,11 @@
                 <input type="submit" value="Enviar">
             </form>
         </section>
-        </section>
     </main>
     <!-- Contacto y redes-->
-    <footer style="border: 2px solid blue; margin-bottom: 10px;">
+    <footer id="aboutUs" style="border: 2px solid blue; margin-bottom: 10px;">
         <ul>
+            <li><a href="#">github</a></li>
             <li><a href="#">email</a></li>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Twitter</a></li>
