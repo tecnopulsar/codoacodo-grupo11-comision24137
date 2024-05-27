@@ -352,3 +352,102 @@ textarea {
   color: black;
 }
 /* ------------------------------ */
+
+/* Media Queries */
+
+/* Mobile Styles (up to 600px) */
+@media (max-width: 600px) {
+  .navegacion ul {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    height: 300px;
+  }
+
+  .hero-card h2 {
+    font-size: 24px;
+  }
+
+  .hero-card p {
+    font-size: 14px;
+  }
+
+  .temario-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .preguntas-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .formulario-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-text,
+  .formulario {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #formulario-contacto div {
+    width: 90%;
+  }
+
+  .boton-enviar {
+    width: 90%;
+  }
+}
+
+/* Tablet Styles (600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .navegacion ul {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    height: 500px;
+  }
+
+  .hero-card h2 {
+    font-size: 32px;
+  }
+
+  .hero-card p {
+    font-size: 18px;
+  }
+
+  .temario-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .preguntas-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .formulario-contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-text,
+  .formulario {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  #formulario-contacto div {
+    width: 100%;
+  }
+
+  .boton-enviar {
+    width: 100%;
+  }
+}
+
+/* Desktop Styles (1024px and above) */
+@media (min-width: 1025px) {
+  /* No changes needed for larger screens as they use the default styles */
+}
