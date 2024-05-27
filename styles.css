@@ -87,6 +87,7 @@ nav {
   position: relative;
 }
 .tecnologias-items {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -94,9 +95,10 @@ nav {
   list-style: none;
   animation: slide 5s linear infinite;
 }
-.tecnologias-items img{
-   
-  width: 200px;
+.tecnologias-items img {
+  width: 50px;
+  height: auto;
+  margin: 10px 75px;
 }
 @keyframes slide {
   0% {
