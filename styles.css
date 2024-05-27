@@ -234,6 +234,7 @@ overflow: hidden;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        align-items: center;
        
     }
         .form-img{
@@ -257,10 +258,9 @@ overflow: hidden;
                 margin-bottom: 10px;
                 margin-left: 10px;
             }
-        .form-text p{
+        .form-p{
             font-size: 24px;
-            
-            margin-top: -120px;
+            margin-top: -350px;
             text-align: center;
         }
 
@@ -292,27 +292,30 @@ overflow: hidden;
                 #nombre{
                     height: 35px;
                     border-radius: 5px;
-                    box-shadow: 10px 5px 5px gray;
+                    box-shadow: 5px 3px 5px gray;
+                    border: 1px solid black;
             
                 }
                 #email{
                     height: 35px;
                     border-radius: 5px;
-                    box-shadow: 10px 5px 5px gray;
+                    box-shadow: 5px 3px 5px gray;
+                    border: 1px solid black;
                 }
                 #telefono{
                     height: 35px;
                     border-radius: 5px;
-                    box-shadow: 10px 5px 5px gray;
+                    box-shadow: 5px 3px 5px gray;
+                    border: 1px solid black;
                 }
                 #curso{
                     height: 35px;
                     border-radius: 5px;
-                    box-shadow: 10px 5px 5px gray;
+                    box-shadow: 5px 3px 5px gray;
                 }
                 textarea{
                     border-radius: 5px;
-                    box-shadow: 10px 5px 5px gray;
+                    box-shadow: 5px 3px 5px gray;
                 }
 
                 .boton-enviar{
@@ -320,7 +323,8 @@ overflow: hidden;
                     height: 45px;
                     border-radius: 5px;
                     background-color: #f4ce14;
-                    box-shadow: 10px 5px 5px gray;
+                    box-shadow: 5px 3px 5px gray;
+                    border: 1px solid black;
                 }
 
         
