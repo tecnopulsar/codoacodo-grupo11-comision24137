@@ -54,22 +54,6 @@
         .error {
             border: 2px solid red;
         }
-
-        /* Estilos y animaciones para el logo */
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo {
-            width: 300px;
-            transition: transform 0.6s ease-in-out;
-            transform-style: preserve-3d;
-        }
-
-        .logo:hover {
-            transform: rotateY(180deg);
-        }
     </style>
 </head>
 
@@ -78,9 +62,9 @@
 
         <nav style="border: 2px solid blue; margin-bottom: 10px;">
 
-            <div class="logo">
-                <img src="./imagenes/logos/Logos_BA_Agencia.jpg"
-                    alt="logo BsAs" />
+            <div class="logo-container">
+                <img src="./imagenes/logos/Logos_BA_Agencia.jpg" alt="logo BsAs"
+                    class="logo" />
             </div>
 
             <div class="navegacion">
@@ -186,6 +170,24 @@
                 <li class="tecnologia-item">
                     <img src="./imagenes/iconos/sequelize.svg"
                         alt="tecnologia sequelize">
+                </li>
+                <li class="tecnologia-item">
+                    <img src="./imagenes/iconos/html5.svg"
+                        alt="tecnologia HTML">
+                </li>
+
+                <li class="tecnologia-item">
+                    <img src="./imagenes/iconos/CSS3.svg" alt="tecnologia CSS">
+                </li>
+
+                <li class="tecnologia-item">
+                    <img src="./imagenes/iconos/javascript.svg"
+                        alt="tecnologia javascript">
+                </li>
+
+                <li class="tecnologia-item">
+                    <img src="./imagenes/iconos/nodejs.svg"
+                        alt="tecnologia nodejs">
                 </li>
 
             </ul>
@@ -397,7 +399,7 @@
         </section>
         <!-- Formulario de contacto y comentarios -->
         <section style="border: 2px solid blue; margin-bottom: 10px;"
-            class="formulario-contacto" id="formularioContacto">
+            class="formulario-contacto" id="formulario-contacto">
             <img src="./imagenes/iconos/formulario.svg"
                 alt="formulario contacto">
             <h2>formulario-contacto</h2>
@@ -463,6 +465,7 @@
             </li>
         </ul>
     </footer>
+
 </body>
 
 </html>
