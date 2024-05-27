@@ -12,61 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
-        /* Estilos y animaciones para el la hero-image */
-        .hero-image {
-            border: 2px solid blue;
-            margin-bottom: 10px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-image img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
-        }
-
-        .hero-image:hover img {
-            transform: scale(1.1);
-            opacity: 0.7;
-        }
-
-        .hero-card {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            background: rgba(0, 0, 0, 0.7);
-            color: white;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-            transition: bottom 0.5s ease-in-out;
-        }
-
-        .hero-image:hover .hero-card {
-            bottom: -50px;
-        }
-
-        /* Estilos validacion formulario por javascript. falta corregir */
         .error {
             border: 2px solid red;
-        }
-
-        /* Estilos y animaciones para el logo */
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
-
-        .logo {
-            width: 300px;
-            transition: transform 0.6s ease-in-out;
-            transform-style: preserve-3d;
-        }
-
-        .logo:hover {
-            transform: rotateY(180deg);
         }
     </style>
 </head>
@@ -74,7 +21,7 @@
 <body>
     <header>
 
-        <nav style="border: 2px solid blue; margin-bottom: 10px;">
+        <nav>
 
             <div class="logo">
             <img src="./imagenes/logos/Logos_BA_Agencia.jpg" alt="logo BsAs" />
@@ -116,7 +63,7 @@
     <main>
 
         <!-- Imagen y descripcion ppal -->
-        <section style="border: 2px solid blue; margin-bottom: 10px;"
+        <section 
             class="hero-image">
             <div>
                 <img src="./imagenes/hero2actualizada.png" alt="hero-image">
@@ -139,7 +86,7 @@
             
         </section>
         <!-- Tecnologías del curso -->
-        <section style="border: 2px solid blue; margin-bottom: 10px;"
+        <section 
             class="tecnologias-container">
             <!-- Carrusel de imagenes de las Tecnologías del curso -->
             
@@ -195,14 +142,14 @@
         </section>
 
         <!-- Cards con Temario del curso -->
-        <section style="border: 2px solid blue; margin-bottom: 10px;"
+        <section 
             class="temario">
 
             <h2>Tecnologias a aprender durante la cursada</h2>
 
             <ul class="temario-cards">
 
-                <li style="border: 2px solid green; margin-bottom: 10px;" class="temario-item">
+                <li class="temario-item">
                     <div>
                         <h2>Herramientas de Diseño</h2>
                         <img style="width: 5opx; height: 50px;"
@@ -214,7 +161,7 @@
                         y prototipos de tus sitios web antes de pasar al código
                     </p>
                 </li>
-                <li style="border: 2px solid green; margin-bottom: 10px;" class="temario-item">
+                <li  class="temario-item">
 
                     <div>
 
@@ -239,7 +186,7 @@
                     </p>
 
                 </li>
-                <li style="border: 2px solid green; margin-bottom: 10px;"
+                <li 
                     class="temario-item">
                     <div>
                         <h2>Maquetación</h2>
@@ -252,7 +199,7 @@
                         web
                     </p>
                 </li>
-                <li style="border: 2px solid green; margin-bottom: 10px;"
+                <li 
                     class="temario-item">
                     <div>
                         <h2>Javascript</h2>
@@ -265,7 +212,7 @@
                         desarrollo web
                     </p>
                 </li>
-                <li style="border: 2px solid green; margin-bottom: 10px;"
+                <li 
                     class="temario-item">
                     <div>
                         <h2>Backend con NodeJS</h2>
@@ -286,16 +233,14 @@
         </section>
         <!-- Preguntas frecuentes -->
 
-        <section style="border: 2px solid blue; margin-bottom: 10px;" class="preguntas-frecuentes">
+        <section class="preguntas-frecuentes">
             <div class="texto-faq">
-                <h2 class="preguntas-frecuentes-titulo">FAQ</h2>
-                <p class="preguntas-frecuentes-descripcion">Recopilación de
-                    preguntas frecuentes sobre el curso</p>
+                <h2 class="preguntas-frecuentes-titulo">Preguntas frecuentes sobre el curso</h2>
+                
             </div>
 
             <ul class="preguntas-cards">
-                <li style="border: 2px solid green; margin-bottom: 10px;"
-                    class="preguntas-item">
+                <li class="preguntas-item">
                     <div class="preguntas-item-pregunta">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/pregunta.svg"
@@ -313,8 +258,7 @@
                         imágenes, enlaces, tablas y formularios.
                     </p>
                 </li>
-                <li style="border: 2px solid green; margin-bottom: 10px;"
-                    class="preguntas-item">
+                <li class="preguntas-item">
                     <div class="preguntas-item-pregunta">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/pregunta.svg"
@@ -327,8 +271,7 @@
                         modificar el contenido de la página dinámicamente.
                     </p>
                 </li>
-                <li style="border: 2px solid green; margin-bottom: 10px;"
-                    class="preguntas-item">
+                <li class="preguntas-item">
                     <div class="preguntas-item-pregunta">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/pregunta.svg"
@@ -341,8 +284,7 @@
                         versiones y permite seguir cambios en los proyectos.
                     </p>
                 </li>
-                <li style="border: 2px solid green; margin-bottom: 10px;"
-                    class="preguntas-item">
+                <li class="preguntas-item">
                     <div class="preguntas-item-pregunta">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/pregunta.svg"
@@ -355,8 +297,7 @@
                         y servicios web.
                     </p>
                 </li>
-                <li style="border: 2px solid green; margin-bottom: 10px;"
-                    class="preguntas-item">
+                <li class="preguntas-item">
                     <div class="preguntas-item-pregunta">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/pregunta.svg"
@@ -375,8 +316,7 @@
                         web.
                     </p>
                 </li>
-                <li style="border: 2px solid green; margin-bottom: 10px;"
-                    class="preguntas-item">
+                <li class="preguntas-item">
                     <div class="preguntas-item-pregunta">
                         <img style="width: 5opx; height: 50px;"
                             src="./imagenes/iconos/pregunta.svg"
@@ -396,57 +336,85 @@
             </ul>
         </section>
         <!-- Formulario de contacto y comentarios -->
-        <section style="border: 2px solid blue; margin-bottom: 10px;"
-            class="formulario-contacto" id="formularioContacto">
-            <img src="./imagenes/iconos/formulario.svg"
-                alt="formulario contacto">
-            <h2>formulario-contacto</h2>
-            <p>Si tienes alguna pregunta, no dudes en contactarnos utilizando el
-                formulario a continuación:</p>
-            <form id="formulario-contacto">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+        <section class="formulario-contacto" id="formularioContacto">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="form-text">
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
+                <div class="form-img">
+                    <img src="./imagenes/iconos/formulario.svg"
+                        alt="formulario contacto">
 
-                <label for="curso">Curso de interés:</label>
-                <select id="curso" name="curso" required>
-                    <option value="">Selecciona un curso</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="javascript">JavaScript</option>
-                    <option value="fullstack">Full Stack</option>
-                </select>
+                    <h2>Formulario de contacto</h2>
+                </div>
+                <p>Si tienes alguna pregunta, no dudes en contactarnos utilizando el
+                    formulario a continuación:</p>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5"
-                    required></textarea>
+            </div>
 
-                <label style="border: 2px solid red;">
-                    <input type="checkbox" id="suscripcion" name="suscripcion">
-                    Quiero recibir información sobre futuros cursos y
-                    promociones.
-                </label>
+            <div class="formulario">
 
-                <label>Preferencia de contacto:</label>
-                <label><input type="radio" name="preferencia" value="email"
-                        required> Email</label>
-                <label><input type="radio" name="preferencia" value="telefono">
-                    Teléfono</label>
+                <form id="formulario-contacto">
 
-                <input type="submit" value="Enviar">
-            </form>
+                    <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingrese aquí su nombre...">
+                    </div>
+
+                    <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Ingrese aquí su email...">
+                    </div>
+
+                    <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese aquí su número de teléfono...">
+                    </div>
+
+                    <div>
+                    <label for="curso">Curso de interés:</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Selecciona un curso</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="fullstack">Full Stack</option>
+                    </select>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Ingrese aqui su mensaje..."></textarea>
+
+                    </div>
+                     
+                    <div>
+                    <label >
+                        <input type="checkbox" id="suscripcion" name="suscripcion">
+                        Quiero recibir información sobre futuros cursos y
+                        promociones.
+                    </label>
+                    </div>
+
+                    <div>
+                    <label>Preferencia de contacto:</label>
+                    <label><input type="radio" name="preferencia" value="email"
+                            required> Email</label>
+                    <label><input type="radio" name="preferencia" value="telefono">
+                        Teléfono</label>
+                    </div>
+                    <input type="submit" value="Enviar" class="boton-enviar">
+
+                </form>
+
+            </div>
+
         </section>
+
     </main>
     <!-- Contacto y redes-->
-    <footer id="aboutUs" style="border: 2px solid blue; margin-bottom: 10px;">
-        <ul>
-            <li><a href="#">github</a></li>
-            <li><a href="#">email</a></li>
+    <footer id="aboutUs" >
+        <ul class="lista-footer">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Email</a></li>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Linkedin</a></li>
